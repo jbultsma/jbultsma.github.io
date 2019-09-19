@@ -1,0 +1,169 @@
+a:link {text-decoration: none;}
+
+/* website background, url gives image, linear gradient rgba gives the tint to the image of 50% black */
+html  {
+  display: table;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea286ac5-0ed8-4f4c-b539-f8b997abfb63/dcgjf84-66697e5c-1ea4-48a7-9f03-15ccbb637e03.jpg/v1/fill/w_1094,h_730,q_70,strp/land_of_the_vanir_by_trichardsen_dcgjf84-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAxIiwicGF0aCI6IlwvZlwvZWEyODZhYzUtMGVkOC00ZjRjLWI1MzktZjhiOTk3YWJmYjYzXC9kY2dqZjg0LTY2Njk3ZTVjLTFlYTQtNDhhNy05ZjAzLTE1Y2NiYjYzN2UwMy5qcGciLCJ3aWR0aCI6Ijw9MTIwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.B2Di274axWyIUBU3Skz8Dk5uUa7ZRU25o_vHklIDCTU") no-repeat center fixed;
+  background-size: cover;
+  width: 100%;
+  color: white; 
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: auto;
+  grid-template-areas:
+    "header header header"
+    "left middle right";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;  
+}
+
+/* .item-1 is the styling for the Nav bar */
+.item-1 {
+  grid-area: header;
+  background-color: rgba(169,169,169,0.2);
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;  
+}
+
+.item-1 ul {
+  padding: 1% 1% 1% 10%;
+  margin: 0;
+}
+
+.item-1 ul li {
+  display: inline-block;
+  width: 29.5%;
+  font-size: 100%;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-2 {
+  grid-area: left;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: 30px;  
+}
+
+.item-2 ul {
+  padding: 2% 2% 2% 20%;
+  margin: 0;
+}
+
+.item-2 ul li {
+  display: inline-block;
+  width: 29.5%;
+  font-size: 100%;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-2 img {
+  border-radius: 30%;
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;   
+}
+
+
+/*styling for middle grid*/
+.item-3 {
+  grid-area: middle;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: 30px;
+}
+
+.photo {
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top:50px; 
+}
+
+.photo img {
+  margin: auto;
+  border: 4px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0% 20%;
+  height: 400px;
+  width: 400px;
+}
+
+.item-3 h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 45px;
+  position: relative;
+  top: 60px;  
+}
+
+.item-3 p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  top: 40px;
+}
+
+.item-4 {
+  grid-area: right;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: 30px;
+}
+
+.item-4 h3 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 45px;
+  position: relative;
+  top: 60px;  
+}
+
+.item-4 p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 15px;
+  position: relative;
+  top: 40px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgba(169,169,169,0.2);
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;  
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+}
+
+p {font-family: "Arial Verdana", Sans-serif;}
